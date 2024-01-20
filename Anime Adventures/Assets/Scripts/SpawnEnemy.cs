@@ -20,7 +20,7 @@ public class SpawnEnemy : MonoBehaviour
         {
             GameObject go = Spawner[Random.Range(0, Spawner.Count)];
             Instantiate(Enemy, new Vector3(go.transform.position.x, go.transform.position.y, 0), transform.rotation);
-            TimeBTWSpawn = 3;
+            TimeBTWSpawn = 2;
             EnemyCount--;
         }
         else
